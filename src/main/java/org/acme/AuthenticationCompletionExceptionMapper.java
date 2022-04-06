@@ -13,7 +13,7 @@ import javax.ws.rs.ext.Provider;
 public class AuthenticationCompletionExceptionMapper implements ExceptionMapper<AuthenticationCompletionException> {
     @Override
     public Response toResponse(AuthenticationCompletionException e) {
-        System.out.println("Exception");
+        System.out.println("AuthenticationCompletionException");
         return Response.status(404).build();
     }
 }
